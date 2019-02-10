@@ -31,7 +31,7 @@ jobs:
 
   - bash: |
       conda create -q -n pyenv python=$(python.version) -y
-      conda env update -q -n pyenv -f python/conda.yaml
+      conda env update -q -n pyenv -f conda.yaml
     displayName: 'Conda install dependencies'
 
   - bash: |
