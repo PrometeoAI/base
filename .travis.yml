@@ -1,0 +1,33 @@
+# Copyright (c) Prometeo AI, Inc. All rights reserved. 
+
+
+sudo: required
+
+language: python
+
+dist: xenial
+
+python:
+  - 3.5.6
+  - 3.6.8
+  - 3.7.2
+
+install:
+  # Install anaconda
+#  - sudo apt-get update # takes 8s
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - conda config --set always_yes yes --set changeps1 no
+  - conda --version
+#  - conda update -q conda # takes 12s
+
+  # Create environment
+  - conda create -q -n pyenv python=$TRAVIS_PYTHON_VERSION
+  - conda env update -q -n pyenv -f conda.yaml
+  - source activate pyenv
+  - pip list
+  - python --version
+
+script:
+  - pytest tests
