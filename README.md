@@ -1,4 +1,4 @@
-[![Python Build Status](https://travis-ci.com/prometeoai/base.svg?branch=master)](https://travis-ci.com/prometeoai/base)
+[![Python Build Status](https://travis-ci.com/PrometeoAI/base.svg?branch=master)](https://travis-ci.com/PrometeoAI/base)
 
 
 # Base for Prometeo AI projects
