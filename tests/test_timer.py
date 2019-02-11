@@ -1,7 +1,7 @@
 # Copyright (c) Prometeo AI, Inc. All rights reserved.
 
 
-from nlp.common.timer import Timer
+from lib.common.timer import Timer
 
 
 def test_timer_init():
