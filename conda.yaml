@@ -34,3 +34,5 @@ dependencies:
   - papermill>=0.17.1
   - wget>=3.2
   - numexpr>=2.6.8
+  - sphinx>=1.8.4
+  - sphinx_rtd_theme>=0.4.3
