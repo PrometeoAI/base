@@ -7,7 +7,7 @@
 # $ conda env update -n prometeo_base -f conda.yaml
 #
 # To register the conda environment in Jupyter:
-# $ python -m ipykernel install --user --name codebase --display-name "Python (prometeo_base)"
+# $ python -m ipykernel install --user --name prometeo_base --display-name "Python (prometeo_base)"
 #
 
 channels:
